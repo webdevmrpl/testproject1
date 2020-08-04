@@ -154,6 +154,3 @@ THUMBNAIL_ALIASES = {
 }
 THUMBNAIL_MEDIA_ROOT = os.path.join(BASE_DIR, 'media/mini')
 THUMBNAIL_MEDIA_URL = '/mini/'
-
-
-#Suck my big cock
