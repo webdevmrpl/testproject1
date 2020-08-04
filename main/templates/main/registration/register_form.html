@@ -1,0 +1,15 @@
+{%extends "main/layout/basic.html"%}
+
+{%block title%}Регистрация{%endblock%}
+
+{%block content%}
+{%if user.is_authenticated%}
+<p>Вы уже зарегестрированы</p>
+{%else%}
+<form method="post">
+    {%csrf_token%}
+    {{form.as_p}}
+    <input type="submit" value="Зарегестрироваться">
+</form>
+{%endif%}
+{%endblock%}

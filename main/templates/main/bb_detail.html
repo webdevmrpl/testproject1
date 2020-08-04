@@ -1,0 +1,13 @@
+{%extends "main/layout/basic.html"%}
+
+{%block title%}{{bb.title}}{%endblock%}
+
+{%block content%}
+<p2>Рубрика: {{bb.rubric.name}}</p2>
+<h2>{{bb.title}}</h2>
+<img src="{{bb.img.url}}">
+<p>{{bb.content}}</p>
+<p>Цена: {{bb.price}}</p>
+<a href="{%url 'edit' pk=bb.pk%}"><p>Править товар</p></a>
+<a href="{%url 'delete' pk=bb.pk%}"><p>Удалить товар</p></a>
+{%endblock%}

@@ -1,0 +1,11 @@
+{%extends "main/layout/basic.html"%}
+{%block title%}Правка объявления{%endblock%}
+
+{%block content%}
+<h1>Правка объявления</h1>
+<form method="post">
+    {%csrf_token%}
+    {{form.as_p}}
+    <input type="submit" value="Править">
+</form>
+{%endblock%}

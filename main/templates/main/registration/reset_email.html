@@ -1,0 +1,5 @@
+{%autoescape off%}
+Уважаемый {{user.get_username}}!
+Вы отправили запрос на смену пароля. Чтобы выполнить сброс, пройдите по этому интернет-адрессу:
+{{ protocol }}://{{ domain }}{%url 'password_reset_confirm' uidb64=uid token=token%}
+{% endautoescape %}
